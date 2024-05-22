@@ -5,4 +5,15 @@ terraform {
       version = "4.33.0"
     }
   }
+
+}
+
+terraform {
+  cloud {
+    organization = "SvenjaRene-Team"
+
+    workspaces {
+      name = "infra"
+    }
+  }
 }
